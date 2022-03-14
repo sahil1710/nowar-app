@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No War</title>
+
+    <link rel="stylesheet" href="nowar.css">
+</head>
+<body>
+    <section class="container">
+        <nav>
+            <h1>No War</h1>
+            <div class="toggle"></div> 
+        </nav>
+        <video src="no_war.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h2>Stop War</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Amet debitis voluptas provident reprehenderit, consequuntur
+                a eaque autem tenetur? Eum, magni.</p>
+            <a src="#">More</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                About
+            </li>
+            <li>
+                Contact
+            </li>
+            <li>
+                Privacy
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const container = document.querySelector('.container')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            container.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
